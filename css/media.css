@@ -1,0 +1,139 @@
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    Header {
+        padding: 12px 8px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burgerBtn {
+        visibility: visible;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .burgerBtn:before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 10px;
+        width: 20px;
+        border: 1px solid #181C29;
+        border-radius: 20px;
+        transform: rotate() translate(-50%);
+        transition: all .3s;
+    }
+
+    .burgerBtn:after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        left: 10px;
+        width: 20px;
+        border: 1px solid #181C29;
+        border-radius: 20px;
+        transform: rotate() translate(-50%);
+        transition: all .3s;
+    }
+    /* 
+    * , *:before, *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    } */
+
+
+
+.about {
+    padding: 60px 8px;
+}
+.aboutImage {
+    max-width: 376px;
+    background-position: center;
+}
+
+.cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
+
+.footer{
+    padding: 60px 8px;
+}
+.containers {
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 380px) {
+    .about {
+        padding: 60px 8px;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aboutContent {
+        padding: 60px 20px;
+    }
+
+    .aboutImage {
+        width: 100%;
+    }
+
+
+    .bestGifts {
+        padding: 60px 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 4fr);
+        gap: 16px;
+    }
+
+
+    
+    
+}
