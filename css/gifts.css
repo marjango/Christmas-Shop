@@ -82,19 +82,17 @@ Header {
     text-align: center;
 }
 
-.menu a:hover {
+.menu button:hover {
     cursor: url('../img/cursor.svg'), pointer;
     color: #FF4646;
     background-color: rgba(255, 70, 70, 0.1); 
     border-radius: 12px;
 }
 
-.menu a:active {
-    cursor: url('../img/cursor.svg'), pointer;
-    color: #FF4646;
-    background-color: rgba(255, 70, 70, 0.1); 
-    border-radius: 12px;
+.burgerBtn {
+    display: none;
 }
+
 
 /* !!! */
 
@@ -130,14 +128,12 @@ Header {
     max-width: 474px;
     height: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     gap: 8px;
 }
 
 .tab1 {
     width: 65px;
-    padding: 0;
     border: none;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -175,14 +171,10 @@ Header {
     height: 40px;
 }
 
-.tabs  button:active {
-    background-color: white 20%;
-}
-
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
 }
 

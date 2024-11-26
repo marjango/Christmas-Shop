@@ -82,16 +82,7 @@
 
 .bestGifts {
     padding: 60px 8px;
-    justify-content: center;
-    align-items: center;
 }
-
-.cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-}
-
-
 
 .footer{
     padding: 60px 8px;
@@ -102,6 +93,17 @@
 
 .container {
     width: 100%;
+}
+
+
+/* !!! */
+
+.gifts {
+    padding: 60px 8px;
+}
+
+.tabs {
+    width: 474px;
 }
 
 }
@@ -175,5 +177,19 @@
     .tabs {
         width: 354px;
     }
-    
+    .tab1 {
+        width: 41px;
+    }
+    .tab2 {
+        width: 92px;
+        padding: 0;
+    }
+    .tab3 {
+        width: 102px;
+        padding: 0;
+    }
+    .tab4 {
+        width: 119px;
+        padding: 0;
+    }
 }
