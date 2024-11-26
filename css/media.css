@@ -13,11 +13,6 @@
         width: 100%;
     }
 
-    .logo {
-        width: auto;
-        height: auto;
-    }
-
     .menu {
         display: none;
     }
@@ -75,9 +70,25 @@
     background-position: center;
 }
 
+.aboutContent {
+    padding: 20px 60px;
+    width: 324px;
+    height: auto;
+}
+
+.slider {
+    padding: 60px 8px;
+}
+
+.bestGifts {
+    padding: 60px 8px;
+    justify-content: center;
+    align-items: center;
+}
+
 .cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 12px;
 }
 
 
@@ -104,6 +115,15 @@
 
 
 @media (max-width: 380px) {
+    .hero {
+        height: auto;
+    }
+
+    .heroContainer {
+        height: auto;
+        padding: 60px 8px;
+    }
+
     .about {
         padding: 60px 8px;
     }
@@ -111,14 +131,17 @@
     .aboutContainer {
         flex-direction: column;
         height: auto;
+        padding: 0 8px;
     }
 
     .aboutContent {
         padding: 60px 20px;
+        width: 324px;
+        height: auto;
     }
 
     .aboutImage {
-        width: 100%;
+        max-width: 364px;
     }
 
 
@@ -130,10 +153,27 @@
 
     .cards {
         grid-template-columns: repeat(1, 4fr);
-        gap: 16px;
+        gap: 12px;
+    }
+
+    .cta {
+        padding: 120px 8px;
+        height: auto;
+    }
+
+    .ctaContainer {
+        height: auto;
     }
 
 
-    
+
+/* 111 */
+    .gifts {
+        padding: 60px 8px;
+    }
+
+    .tabs {
+        width: 354px;
+    }
     
 }
