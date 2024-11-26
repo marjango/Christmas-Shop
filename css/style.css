@@ -1,9 +1,13 @@
 * {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 Header {
@@ -239,6 +243,7 @@ Header {
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .sliderHeader {
@@ -282,6 +287,17 @@ Header {
     gap: 21px;
     overflow: hidden;
 }
+
+.sliderContent .control:not(.active):hover {
+    background-color: transparent;
+    cursor: default;
+}
+  
+.sliderContent .control.active:hover {
+background-color: #FFCF99;
+cursor: pointer;
+}
+
   
 .slide {
     display: flex;
@@ -355,6 +371,7 @@ Header {
     flex-direction: column;
     gap: 20px;
     padding: 60px 82px;
+    overflow: hidden;
 }
 
 .bestGiftsHeader {
@@ -391,8 +408,9 @@ Header {
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
 }
 
